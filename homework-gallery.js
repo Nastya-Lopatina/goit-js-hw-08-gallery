@@ -30,9 +30,9 @@ galleryListEl.addEventListener('click', onOpenPictureByClick );
 function onOpenPictureByClick(e) {
     e.preventDefault();
 
-if (!e.target.classList.contains('gallery__image')) {
-return;
-}
+   if (!e.target.classList.contains('gallery__image')) {
+   return;
+    }
 
     modalEl.classList.add('is-open');
 
