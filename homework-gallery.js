@@ -57,6 +57,8 @@ function onClosePictureByClick() {
     btnEl.removeEventListener('click', onClosePictureByClick);
 
     backdropEl.removeEventListener('click', onClosePictureByClick);
+
+    window.removeEventListener('keydown', onClosePictureEsc);
 }
 
 //Закрытие модального окна с помощью  клавиши Esc //
